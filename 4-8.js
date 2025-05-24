@@ -5,4 +5,3 @@ var obj1 = {
     },
   };
   setTimeout(obj1.func, 1000);
-  4-17까지 할 예정이야
