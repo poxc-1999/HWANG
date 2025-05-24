@@ -19,4 +19,4 @@ var addCoffee = function(name) {
     await _addCoffee('카페라떼');
     console.log(coffeeList);
   };
-  coffeeMaker()
+  coffeeMaker();
