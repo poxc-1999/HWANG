@@ -336,4 +336,85 @@
 ## ✅ 5-18 : 5인자 함수를 커링(curry)하여 순차적으로 인자를 전달하는 예제
 - 커링(curry)으로 5인자 함수를 순차적으로 인자 전달하며 실행
 
+# Chapter 6: 생성자 함수와 프로토타입
+
+## ✅ 6-1 : 생성자 함수와 프로토타입 메서드 정의 예제
+- 생성자 함수(Person)로 인스턴스 생성, prototype에 메서드(getName) 추가
+
+## ✅ 6-2 : 생성자 함수와 프로토타입 프로퍼티/메서드 정의 및 인스턴스 생성 예제
+- 생성자 함수(Constructor)와 프로토타입에 메서드/프로퍼티를 추가하고, 인스턴스를 생성해 구조를 확인하는 예제
+
+## ✅ 6-3 : 배열 인스턴스의 constructor 프로퍼티와 생성자 함수 관계 예제
+- 배열의 constructor 프로퍼티가 Array임을 확인하고, 이를 이용해 새 배열 인스턴스를 생성하는 예제
+
+## ✅ 6-4 : constructor 프로퍼티 임의 변경과 instanceof 결과 확인 예제
+- 다양한 데이터 타입의 constructor 프로퍼티를 임의로 변경하고, instanceof 연산 결과를 확인하는 예제
+
+## ✅ 6-5 : 다양한 방법으로 생성자 함수 호출 및 인스턴스 생성 예제
+- 생성자와 프로토타입의 constructor를 활용해 여러 방식으로 인스턴스를 생성하고, instanceof로 확인하는 예제
+
+## ✅ 6-6 : 인스턴스에 메서드 오버라이딩(덮어쓰기) 예제
+- 프로토타입 메서드를 인스턴스에서 오버라이딩하여 다른 동작을 구현하는 예제
+
+## ✅ 6-7 : 배열의 인스턴스 메서드와 상속된 Object 메서드 사용 예제
+- 배열에서 push(인스턴스 메서드)와 hasOwnProperty(상속된 메서드)를 사용하는 예제
+
+## ✅ 6-8 : 배열의 toString 메서드 오버라이딩 및 다양한 toString 호출 예제
+- 배열의 toString을 직접 오버라이딩하고, prototype 및 Object의 toString 결과를 비교하는 예제
+
+## ✅ 6-9 : Object.prototype에 getEntries 메서드 추가 및 다양한 타입에서의 동작 예제
+- Object.prototype에 getEntries를 추가하고, 여러 타입에서 프로퍼티 목록을 배열로 반환하는 예제
+
+## ✅ 6-10 : 배열처럼 동작하는 Grade 생성자 함수 구현 예제
+- Grade 생성자 함수로 arguments를 받아 인덱스와 length 프로퍼티를 갖는 배열 유사 객체를 생성하는 예제
+
+# Chapter 7: 프로토타입 상속과 클래스
+
+## ✅ 7-1 : 생성자 함수의 인스턴스/정적 메서드 구현 및 호출 예제
+- Rectangle 생성자에 인스턴스 메서드와 정적 메서드를 정의하고, 호출 방식 차이를 확인하는 예제
+
+## ✅ 7-2 : 프로토타입을 배열로 변경한 생성자 함수 Grade 예제
+- Grade 생성자 함수의 prototype을 배열로 설정하여, 인스턴스가 배열 메서드를 상속받도록 한 예제
+
+## ✅ 7-3 : 배열 메서드를 상속받은 Grade 인스턴스의 push 및 length 조작 예제
+- Grade 인스턴스에서 배열 메서드를 활용하고, length 삭제 시의 동작 변화를 확인하는 예제
+
+## ✅ 7-4 : 프로토타입에 배열 요소가 있는 Grade 생성자에서 push와 length 조작 예제
+- 프로토타입 배열 요소의 영향으로 push 및 length 조작 시 동작이 달라지는 Grade 인스턴스 예제
+
+## ✅ 7-5 : Rectangle과 Square 생성자 각각에 독립된 getArea 메서드 구현 예제
+- Rectangle, Square 생성자에 각각 getArea를 정의해 독립적으로 동작시키는 예제
+
+## ✅ 7-6 : Square가 Rectangle 구조를 따라 width와 height를 동일하게 사용하는 예제
+- Square 생성자에서 width와 height를 동일하게 설정하여 Rectangle과 유사한 getArea 동작을 구현한 예제
+
+## ✅ 7-7 : call 메서드와 프로토타입 체인으로 Rectangle을 상속한 Square 예제
+- Square에서 Rectangle.call로 프로퍼티 상속, 프로토타입 체인으로 메서드 상속을 구현한 예제
+
+## ✅ 7-8 : 프로토타입을 동적으로 확장하는 extendClass1 함수와 Rectangle 상속 예제
+- extendClass1 함수로 Rectangle을 상속받는 Square 생성자 정의 및 getArea 메서드 활용 예제
+
+## ✅ 7-9 : 중간 브릿지(Bridge) 함수로 프로토타입 상속 구조 개선(extendClass2) 예제
+- 중간 Bridge 함수를 활용한 extendClass2로 Rectangle의 prototype을 안전하게 상속하는 Square 예제
+
+## ✅ 7-10 : Object.create로 프로토타입 상속 구현 및 freeze로 변경 방지 예제
+- Object.create로 Rectangle의 prototype을 상속받아 Square의 prototype으로 설정하고, freeze로 변경을 방지한 예제
+
+## ✅ 7-11 : extendClass1 함수에서 constructor 프로퍼티 설정 및 프로토타입 확장 예제
+- extendClass1 함수에서 constructor 프로퍼티를 SubClass로 지정하고, 프로토타입 메서드를 동적으로 확장하는 예제
+
+## ✅ 7-12 : extendClass2에서 constructor 프로퍼티 보정 및 프로토타입 확장 예제
+- extendClass2 함수 내에서 SubClass.prototype.constructor와 Bridge.prototype.constructor를 각각 올바르게 설정한 프로토타입 상속 예제
+
+## ✅ 7-13 : Object.create 기반 extendClass3 함수로 프로토타입 상속 및 메서드 확장 예제
+- Object.create를 활용한 extendClass3 함수로 안전하게 프로토타입 상속 및 메서드 확장, constructor 설정 예제
+
+## ✅ 7-14 : super 메서드를 구현한 extendClass 함수와 메서드 상속 활용 예제
+- extendClass에 super 메서드를 추가해 부모 생성자와 메서드 호출을 지원하는 프로토타입 상속 예제
+
+## ✅ 7-15 : ES5 생성자 함수와 ES6 클래스의 static/인스턴스 메서드 비교 예제
+- ES5 생성자와 ES6 클래스에서 정적(static) 메서드와 인스턴스 메서드의 사용 방법을 비교하는 예제
+
+## ✅ 7-16 : ES6 클래스 상속과 super 키워드 활용 예제
+- ES6 class 문법으로 Rectangle을 상속받는 Square 클래스에서 super를 사용해 부모 메서드 호출 예제
 
